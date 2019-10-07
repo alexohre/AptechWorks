@@ -1,0 +1,167 @@
+/* UNIVERSAL STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: lightgray !important;
+    height: 100%;
+}
+
+/* FOOTER */
+.footer{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    height: 350px;
+    position: relative;
+}
+
+.footer .footer-bottom{
+    background-color: rgb(78, 78, 78);
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    bottom: 0;
+    border-top: 1px solid white;
+}
+
+.footer .footer-content{
+    /* border: 1px solid red; */
+    height: 300px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    /* border: 1px solid white; */
+}
+
+/* .footer .footer-content .footer-section.quick-links{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    height: 7
+} */
+
+.footer .footer-content .footer-section a{
+    color: white;
+}
+
+.footer .footer-content .footer-section .contact span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+
+.footer .footer-content .footer-section .socials i{
+    border: 1px solid gray;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all .3s;
+}
+
+.footer .footer-content .footer-section .socials i:hover{
+    border: 2px solid white;
+    transition: all .3s;
+}
+
+.footer .footer-content .footer-section ul li {
+    display: block;
+    margin-bottom: 10px;
+    list-style: disc;
+    transition: all .4s;
+    padding-left: 15px;
+}
+
+.footer .footer-content .footer-section ul li:hover{
+    padding-left: 25px;
+    color: cornflowerblue;
+    transition: all .4s;
+}
+
+.footer .footer-content .footer-section .text-input{
+    background-color: #101010;
+    border: gray;
+    margin-bottom: 7px;
+}
+
+.ftr-btn{
+    width: 35%;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.ftr-btn:hover{
+    background-color: cornflowerblue;
+    color: black;
+    border: none;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px){
+    header nav{
+        position: relative;
+    }
+   
+    header nav ul{
+        width: 100%;
+        padding: 15px 0;
+        background-color: rgb(122, 162, 236);
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .showing{
+        max-height: 100em;
+    }
+    header nav ul li{
+        width: 100%;
+    }
+
+    header nav ul li ul{
+    position: static;
+    background-color: rgb(122, 162, 236);
+    width: 100%;
+    display: block;
+    }
+
+    header nav ul li ul li{
+    width: 100%;
+    text-align: left;
+    padding-left: 4rem;
+    }
+
+    header nav .menu-toggle{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 2rem;
+    }
+
+    header nav .logo img{
+    width: 150px;
+    padding-top: 0.9rem;
+    padding-left: 1rem;
+    }
+}
