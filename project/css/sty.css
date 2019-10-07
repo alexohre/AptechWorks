@@ -1,0 +1,437 @@
+/* UNIVERSAL STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: lightgray !important;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 5px 0;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+p{
+    margin: 5px 0 15px;
+    line-height: 1.3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.btn{
+    padding: .5rem 1rem;
+    background-color: cornflowerblue;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+.btn:hover{
+    background-color: rgb(29, 104, 243);
+    color: white;
+}
+
+
+.text-input{
+    padding: .7rem 1rem;
+    width: 100%;
+    display: block;
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 6px;
+    color: #444444;
+    outline: none;
+    line-height: 1.4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+.search-input{
+    padding: .7rem 1rem;
+    width: 100%;
+    display: block;
+    border: 1px solid rgb(209, 207, 207);
+    border-radius: 6px;
+    color: #444444;
+    outline: none;
+    line-height: 1.4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+ /*END OF UNIVERSAL STYLES  */
+
+
+ /* NAV BAR */
+header{
+    background-color: cornflowerblue;
+    height: 55px;
+}
+
+header nav .logo{
+    float: left;
+}
+
+header nav .logo img{
+    width: 200px;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+}
+
+header nav .menu-toggle{
+    display: none;
+}
+
+header nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 1.5rem;
+    margin-top: .1.5rem;
+}
+
+
+
+header nav ul li{
+    float: left;
+    position: relative; 
+    margin-top: .3rem;
+}
+
+
+header nav ul li a{
+    display: block;
+    padding: 6px;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white !important;
+}
+
+
+header nav ul .active{
+    border: 2px solid rgb(13, 61, 150);
+    border-radius: 6px;
+    background-color:transparent;
+}
+
+header nav ul .active:hover{
+    /* border: 3px solid purple; */
+    border-radius: 6px;
+    background-color: rgb(13, 61, 150);
+}
+
+
+/* Hide dropdown */
+header nav ul li ul{
+    position: absolute;
+    background-color: gray;
+    top: 46px; 
+    right: 0 !important;
+    width: 8rem;
+    margin: 0px;
+    display: none;
+}
+/* Show dropdown */
+header nav ul li:hover ul{
+    display: block;
+}
+
+/* Dropdown list items */
+header nav ul li ul li{
+    width: 100%;
+    text-align: center;
+}
+
+header nav ul li ul li a{
+    padding:  10px;
+    margin: 0;
+}
+
+header nav ul li ul li a:hover{
+    background-color: rgb(6, 25, 61);
+}
+
+/* PAGE CONTENT */
+.page-content{
+    width: 90%;
+    margin: 15px auto;
+    min-height: 50%;
+    /* border: 1px solid #f00; */
+}
+
+.page-content .main-content{
+    width: 70%;
+    float: left;
+    /* border: 1px solid #000; */
+}
+
+.page-content .main-content .recent-post-title{
+    margin: 15px;
+}
+
+.page-content .main-content .post{
+    width: 95%;
+    height: 250px;
+    margin: 15px auto;
+    background: white;
+    border-radius: 6px;
+    position: relative;
+}
+
+.page-content .main-content .post .read-more{
+position: absolute;
+bottom: 10px;
+right: 12px;
+background-color: transparent;
+border: 1px solid #000;
+color: #000;
+}
+
+.page-content .main-content .post .read-more:hover{
+    background-color: rgb(29, 104, 243);
+    color: white;
+    border: none;
+}
+
+.page-content .main-content .post .post-image{
+    width:  40%;
+    height: 100%;
+    float: left;
+}
+
+.page-content .main-content .post .post-preview{
+    width: 60%;
+    padding: 10px;
+    float: right;
+}
+
+
+/* SIDEBAR */
+.page-content .sidebar{
+    width: 30%;
+    float: left;
+}
+
+.page-content .sidebar .section{
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.page-content .sidebar .section-title{
+    margin: 0 0 10px 0;
+}
+
+.page-content .sidebar .section.topics ul{
+    list-style: none;
+    border-top: 1px solid rgb(209, 207, 207);
+}
+
+.page-content .sidebar .section.topics ul li a{
+    display: block;
+    color: #000;
+    padding: 10px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid rgb(209, 207, 207);
+    transition: all 0.4s;
+}
+
+.page-content .sidebar .section.topics ul li a:hover{
+    color: cornflowerblue;
+    padding-left: 10px;
+    transition: all 0.4s;
+}
+
+.subscribe{
+    padding: .5rem 1rem;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.subscribe:hover{
+    background-color: cornflowerblue;
+    border: none;
+}
+
+/* CAROUSEL */
+.carousel{
+    padding: 0 1.4rem;
+}
+
+.d-block{
+    height: 22rem;
+}
+
+/* FOOTER */
+.footer{
+    background-color: rgb(27, 27, 27);
+    color: white;
+    height: 350px;
+    position: relative;
+}
+
+.footer .footer-bottom{
+    background-color: rgb(78, 78, 78);
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+    bottom: 0;
+    border-top: 1px solid white;
+}
+
+.footer .footer-content{
+    /* border: 1px solid red; */
+    height: 300px;
+    display: flex;
+}
+
+.footer .footer-content .footer-section{
+    flex: 1;
+    padding: 25px;
+    /* border: 1px solid white; */
+}
+
+/* .footer .footer-content .footer-section.quick-links{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    height: 7
+} */
+
+.footer .footer-content .footer-section a{
+    color: white;
+}
+
+.footer .footer-content .footer-section .contact span{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+
+.footer .footer-content .footer-section .socials i{
+    border: 1px solid gray;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 4px;
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-right: 5px;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all .3s;
+}
+
+.footer .footer-content .footer-section .socials i:hover{
+    border: 2px solid white;
+    transition: all .3s;
+}
+
+.footer .footer-content .footer-section ul li {
+    display: block;
+    margin-bottom: 10px;
+    list-style: disc;
+    transition: all .4s;
+    padding-left: 15px;
+}
+
+.footer .footer-content .footer-section ul li:hover{
+    padding-left: 25px;
+    color: cornflowerblue;
+    transition: all .4s;
+}
+
+.footer .footer-content .footer-section .text-input{
+    background-color: #101010;
+    border: gray;
+    margin-bottom: 7px;
+}
+
+.ftr-btn{
+    width: 35%;
+    padding: .5rem 1rem;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 6px;
+}
+
+.ftr-btn:hover{
+    background-color: cornflowerblue;
+    color: black;
+    border: none;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 768px){
+    header nav{
+        position: relative;
+    }
+   
+    header nav ul{
+        width: 100%;
+        padding: 15px 0;
+        background-color: rgb(122, 162, 236);
+        max-height: 0;
+        padding: 0;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    .showing{
+        max-height: 100em;
+    }
+    header nav ul li{
+        width: 100%;
+    }
+
+    header nav ul li ul{
+    position: static;
+    background-color: rgb(122, 162, 236);
+    width: 100%;
+    display: block;
+    }
+
+    header nav ul li ul li{
+    width: 100%;
+    text-align: left;
+    padding-left: 4rem;
+    }
+
+    header nav .menu-toggle{
+    display: block;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    font-size: 2rem;
+    }
+
+    header nav .logo img{
+    width: 150px;
+    padding-top: 0.9rem;
+    padding-left: 1rem;
+    }
+}
